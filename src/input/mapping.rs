@@ -31,6 +31,8 @@ pub fn apply_mappings(offset: usize, gamepads: Vec<Gamepad>) -> Vec<Vec<Joystick
                     map(value.value(), -1.0, 1.0, 0.0, 1.0)
                 } else if id == 0 {
                     value.value()
+                } else if id == 4 {
+                    value.value()
                 } else {
                     -value.value()
                 };
